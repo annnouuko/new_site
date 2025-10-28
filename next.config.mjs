@@ -1,15 +1,13 @@
-// next.config.mjs
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack(config) {
     config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"],
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ["@svgr/webpack"], // важно, чтобы был именно @svgr/webpack
     });
     return config;
   },
 };
 
 export default nextConfig;
-

@@ -4,23 +4,65 @@ import { useState } from "react";
 export default function ButtonSvg({ onClick, className }) {
   const [pressed, setPressed] = useState(false);
 
-  // Пути к SVG в папке public (регистр очень важен!)
-  const BUTTON1 = "/svgs/button1.svg";
-  const BUTTON2 = "/svgs/button2.svg";
-
   return (
-    <div className={`relative ${className} flex justify-center items-center`}>
-      <img
-        src={pressed ? BUTTON2 : BUTTON1}
-        alt="Button"
-        className="w-full h-auto md:w-[300px] md:h-[100px] cursor-pointer transition-all duration-150"
-        onMouseDown={() => setPressed(true)}
-        onMouseUp={() => {
-          setPressed(false);
-          onClick && onClick();
+    <div
+      className={`relative ${className} w-[140px] md:w-[200px] h-[80px] md:h-[55px] flex justify-center items-center cursor-pointer active:scale-95 transition-transform duration-150`}
+      onMouseDown={() => setPressed(true)}
+      onMouseUp={() => {
+        setPressed(false);
+        onClick && onClick();
+      }}
+      onMouseLeave={() => setPressed(false)}
+    >
+      <svg
+        width="169"
+        height="75"
+        viewBox="0 0 169 75"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-full h-full"
+        style={{
+          filter: pressed
+            ? "drop-shadow(0px 2px 2px rgba(0,0,0,0.25))"
+            : "drop-shadow(0px 6px 8px rgba(0,0,0,0.4))",
+          transform: pressed ? "translateY(2px)" : "translateY(0)",
+          transition: "all 0.15s ease",
         }}
-        onMouseLeave={() => setPressed(false)}
-      />
+      >
+        <rect y="2" width="144" height="55" rx="17" fill="#F3F3F3" />
+        <path
+          d="M46.2352 34.1061C43.8898 34.1061 42.3341 32.2321 42.3341 29.7807C42.3341 27.3529 43.8545 25.4436 46.2352 25.4436C48.168 25.4436 49.5116 26.6339 49.8652 28.6375L48.7102 28.6493C48.4037 27.2704 47.5434 26.41 46.2352 26.41C44.5145 26.41 43.4537 27.8596 43.4537 29.7807C43.4537 31.69 44.5145 33.1396 46.2352 33.1396C47.5434 33.1396 48.4155 32.2911 48.828 30.9593L49.983 30.9711C49.5116 32.8568 48.168 34.1061 46.2352 34.1061Z"
+          fill="#757575"
+        />
+        <path
+          d="M55.665 34.165C53.3315 34.165 51.6107 32.4443 51.6107 29.8396C51.6107 27.2468 53.3315 25.5025 55.665 25.5025C57.9986 25.5025 59.7193 27.2114 59.7193 29.8396C59.7193 32.4914 57.9986 34.165 55.665 34.165Z"
+          fill="#757575"
+        />
+        <path
+          d="M61.7934 34V25.6911H63.2784L66.7081 32.845V25.6911H67.7806V34H66.2838L62.8541 26.8461V34H61.7934Z"
+          fill="#757575"
+        />
+        <path
+          d="M71.739 34V26.6575H69.2404V25.6911H75.4397V26.6575H72.8115V34H71.739Z"
+          fill="#757575"
+        />
+        <path
+          d="M75.0642 34L78.2346 25.6911H79.4014L82.5599 34H81.4167L80.4149 31.3718H77.1974L76.1956 34H75.0642Z"
+          fill="#757575"
+        />
+        <path
+          d="M77.5628 30.4054H80.0496L78.8121 27.0464L77.5628 30.4054Z"
+          fill="#757575"
+        />
+        <path
+          d="M87.3125 34.1061C84.9672 34.1061 83.4115 32.2321 83.4115 29.7807C83.4115 27.3529 84.9318 25.4436 87.3125 25.4436C89.2454 25.4436 90.589 26.6339 90.9425 28.6375L89.7875 28.6493C89.4811 27.2704 88.6207 26.41 87.3125 26.41C85.5918 26.41 84.5311 27.8596 84.5311 29.7807C84.5311 31.69 85.5918 33.1396 87.3125 33.1396C88.6207 33.1396 89.4929 32.2911 89.9054 30.9593L91.0604 30.9711C90.589 32.8568 89.2454 34.1061 87.3125 34.1061Z"
+          fill="#757575"
+        />
+        <path
+          d="M94.5738 34V26.6575H92.0752V25.6911H98.2745V26.6575H95.6463V34H94.5738Z"
+          fill="#757575"
+        />
+      </svg>
     </div>
   );
 }
