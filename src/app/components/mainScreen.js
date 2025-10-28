@@ -10,7 +10,7 @@ export default function MainScreen() {
             <img
               src="img/Frame 34.png"
               alt="Image 22 2"
-              className="w-[390px] md:w-[783px] h-[350px] md:h-[799px] object-cover"
+              className="w-[390px]    md:w-[783px]  h-[370px] md:h-[799px] object-cover"
             />
           </div>
         </div>

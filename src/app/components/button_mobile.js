@@ -16,7 +16,7 @@ export default function Button_mobile() {
   };
 
   return (
-    <div className="flex md:hidden justify-center items-center h-[100px] w-full">
+    <div className="flex md:hidden justify-center items-center h-[100px] w-[450px]">
       <div className="flex justify-center items-center h-[60px] w-[200px] ">
         <img
           src={

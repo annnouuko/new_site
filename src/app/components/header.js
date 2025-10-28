@@ -50,11 +50,11 @@ export default function Header() {
 
       {/* === ЛОГО === */}
       <div className="flex justify-end md:justify-end  w-full md:w-[600px] h-[100px] ">
-        <div className="flex items-end justify-end h-[100px] w-[200px]  bg-slate-300">
+        <div className=" flex items-center -mt-6 justify-end h-[100px] w-[200px]  bg-slate-300  md:flex items-end justify-end h-[100px] w-[200px]  bg-slate-300">
           <img
             src="/img/logo_v3cg.svg"
             alt="Logo"
-            className="h-[67px] w-[40px]"
+            className="h-[50px] w-[20px] md:h-[67px] w-[40px]"
           />
         </div>
       </div>
@@ -78,12 +78,12 @@ export default function Header() {
       </div>
 
       {/* === КНОПКА === */}
-      <div className="flex h-[50px] justify-end items-center w-[10px] bg-slate-400   md:flex h-[150px] justify-end items-center w-[280px]">
-        <div className=" md: flex items-end  w-[200px] h-[55px] relative">
+      <div className="flex h-[50px] justify-end items-center w-[10px] md:flex h-[150px] justify-end items-center w-[280px]">
+        <div className=" bg-slate-400  md: flex items-end  w-[200px] h-[55px] relative">
           <img
             src={pressed ? "/img/button2.svg" : "/img/button1.svg"}
             alt="Button"
-            className="h-[100px] w-[300px] cursor-pointer transition-all duration-150"
+            className=" md:h-[100px] w-[300px] cursor-pointer transition-all duration-150"
             onMouseDown={() => setPressed(true)}
             onMouseUp={() => {
               setPressed(false);
