@@ -5,8 +5,8 @@ export default function ButtonSvg({ onClick, className }) {
   const [pressed, setPressed] = useState(false);
 
   // Пути к SVG в папке public (регистр очень важен!)
-  const BUTTON1 = "/svgs/Button1.svg";
-  const BUTTON2 = "/svgs/Button2.svg";
+  const BUTTON1 = "/svgs/button1.svg";
+  const BUTTON2 = "/svgs/button2.svg";
 
   return (
     <div className={`relative ${className} flex justify-center items-center`}>
