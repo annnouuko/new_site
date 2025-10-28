@@ -50,7 +50,7 @@ export default function Header() {
 
       {/* === ЛОГО === */}
       <div className="flex justify-end md:justify-end  w-full md:w-[600px] h-[100px] ">
-        <div className="flex items-end justify-end h-[100px] w-[100px]  bg-slate-300">
+        <div className="flex items-end justify-end h-[100px] w-[200px]  bg-slate-300">
           <img
             src="/img/logo_v3cg.svg"
             alt="Logo"
@@ -78,8 +78,8 @@ export default function Header() {
       </div>
 
       {/* === КНОПКА === */}
-      <div className="flex h-[150px] justify-end items-center w-[280px]">
-        <div className="flex items-end w-[200px] h-[55px] relative">
+      <div className="flex h-[50px] justify-end items-center w-[10px] bg-slate-400   md:flex h-[150px] justify-end items-center w-[280px]">
+        <div className="flex items-end ml-5 w-[160px] h-[55px] relative">
           <img
             src={pressed ? "/img/button2.svg" : "/img/button1.svg"}
             alt="Button"
@@ -100,7 +100,7 @@ export default function Header() {
           menuOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden z-40`}
       >
-        <div className="flex flex-col p-8 space-y-6 text-lg">
+        <div className="flex flex-col p-20 -mt-13 space-y-6 text-lg text-black">
           <Link href="/" onClick={() => setMenuOpen(false)}>
             HOMEPAGE
           </Link>
