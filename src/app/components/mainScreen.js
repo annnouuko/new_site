@@ -6,11 +6,11 @@ export default function MainScreen() {
       <div className="flex flex-col md:flex-row items-start m-6 gap-[1rem]">
         {/* === КАРТИНКА === */}
         <div className="flex justify-center md:justify-end items-start w-full md:w-[660px] h-[250px] md:h-[700px]">
-          <div className="flex items-start justify-end w-full   md:w-[783px] -mt-30 h-[250px] md:h-[699px]">
+          <div className="flex items-start justify-end w-full md:w-[783px] -mt-30 h-[250px] md:h-[699px]">
             <img
               src="img/Frame 34.png"
               alt="Image 22 2"
-              className="w-[390px]    md:w-[783px]  h-[370px] md:h-[799px] object-cover"
+              className="w-[390px] md:w-[783px] h-[370px] md:h-[799px] object-cover"
             />
           </div>
         </div>

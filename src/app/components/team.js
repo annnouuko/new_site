@@ -4,9 +4,9 @@ export default function Team() {
       <div className="flex flex-col h-auto md:h-[1000px] m-4 md:m-6 gap-[2rem] md:gap-[3rem]">
 
         {/* Заголовок */}
-        <div className="flex flex-col md:flex-row h-auto md:h-[80px] w-full gap-[0.5rem] md:gap-[1rem]">
+        <div className="flex flex-row md:flex-row h-auto md:h-[80px] w-full gap-[0.5rem] md:gap-[1rem]">
           <div className="text-[#9D9D9D] text-[32px] md:text-[65px] leading-none">VOLUME CG</div>
-          <div className="text-black text-[32px] md:text-[65px] leading-none">VALUES</div>
+          <div className="text-black text-[32px] md:text-[65px] leading-none">TEAM</div>
         </div>
 
         {/* Контент */}

@@ -25,42 +25,39 @@ export default function Header() {
         onClick={() => setMenuOpen(!menuOpen)}
       >
         <span
-          className={`block h-[2px] w-6 bg-black transition-all ${
-            menuOpen ? "rotate-45 translate-y-[6px]" : ""
-          }`}
+          className={`block h-[2px] w-6 bg-black transition-all ${menuOpen ? "rotate-45 translate-y-[6px]" : ""
+            }`}
         ></span>
         <span
-          className={`block h-[2px] w-6 bg-black transition-all ${
-            menuOpen ? "opacity-0" : ""
-          }`}
+          className={`block h-[2px] w-6 bg-black transition-all ${menuOpen ? "opacity-0" : ""
+            }`}
         ></span>
         <span
-          className={`block h-[2px] w-6 bg-black transition-all ${
-            menuOpen ? "-rotate-45 -translate-y-[6px]" : ""
-          }`}
+          className={`block h-[2px] w-6 bg-black transition-all ${menuOpen ? "-rotate-45 -translate-y-[6px]" : ""
+            }`}
         ></span>
       </button>
 
       {/* === ЛЕВАЯ ЧАСТЬ (desktop only) === */}
-      <div className="hidden md:flex items-end justify-end w-[200px] h-[100px] ">
-        <div className="flex justify-end items-end w-[150px] h-[50px]">
+      <div className="hidden md:flex items-end justify-end w-[200px] h-[100px]">
+        <div className="flex justify-end items-start w-[150px] h-[50px]">
           <div className="text-black text-[16px] font-semibold">VOLUME CG</div>
         </div>
       </div>
 
       {/* === ЛОГО === */}
-      <div className="flex justify-end md:justify-end  w-full md:w-[600px] h-[100px] ">
-        <div className=" flex items-center -mt-6 justify-end h-[100px] w-[200px]  bg-slate-300  md:flex items-end justify-end h-[100px] w-[200px]  bg-slate-300">
+      <div className="flex justify-center md:justify-end  w-full md:w-[600px] h-[100px] ">
+        <div className="flex items-center justify-end md:justify-end  h-[100px] w-[200px]">
           <img
             src="/img/logo_v3cg.svg"
             alt="Logo"
-            className="h-[50px] w-[20px] md:h-[67px] w-[40px]"
+            className="h-[40px] w-[30px] md:h-[67px] md:w-[40px]"
           />
         </div>
       </div>
 
       {/* === НАВИГАЦИЯ (desktop only) === */}
-      <div className="hidden md:flex items-end justify-end h-[180px] w-[410px] ">
+      <div className="hidden md:flex items-end justify-end h-[180px] w-[410px]">
         <div className="flex flex-col h-[150px] w-[200px] space-y-[2px]">
           <Link href="/" className={getLinkClass("/")}>
             HOMEPAGE
@@ -78,12 +75,12 @@ export default function Header() {
       </div>
 
       {/* === КНОПКА === */}
-      <div className="flex h-[50px] justify-end items-center w-[10px] md:flex h-[150px] justify-end items-center w-[280px]">
-        <div className=" bg-slate-400  md: flex items-end  w-[200px] h-[55px] relative">
+      <div className="flex justify-center md:justify-end items-center w-full md:w-[280px] h-[80px] md:h-[150px]">
+        <div className="relative w-[140px] md:w-[200px] h-[80px] md:h-[55px] flex justify-center items-center">
           <img
             src={pressed ? "/img/button2.svg" : "/img/button1.svg"}
             alt="Button"
-            className=" md:h-[100px] w-[300px] cursor-pointer transition-all duration-150"
+            className="w-full h-auto cursor-pointer transition-all duration-150"
             onMouseDown={() => setPressed(true)}
             onMouseUp={() => {
               setPressed(false);
@@ -94,11 +91,11 @@ export default function Header() {
         </div>
       </div>
 
+
       {/* === МОБИЛЬНОЕ МЕНЮ === */}
       <div
-        className={`fixed top-0 left-0 h-full w-[70%] max-w-[320px] bg-white shadow-xl transform ${
-          menuOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out md:hidden z-40`}
+        className={`fixed top-0 left-0 h-full w-[70%] max-w-[320px] bg-white shadow-xl transform ${menuOpen ? "translate-x-0" : "-translate-x-full"
+          } transition-transform duration-300 ease-in-out md:hidden z-40`}
       >
         <div className="flex flex-col p-19 -mt-13 space-y-6 text-lg text-black">
           <Link href="/" onClick={() => setMenuOpen(false)}>
@@ -114,7 +111,7 @@ export default function Header() {
             CONTACT
           </Link>
           <Link href="/contacts" onClick={() => setMenuOpen(false)}>
-            CHEEK OUR SHOWREEL
+            CHECK OUR SHOWREEL
           </Link>
         </div>
       </div>
@@ -126,32 +123,6 @@ export default function Header() {
           onClick={() => setMenuOpen(false)}
         ></div>
       )}
-
-      {/* === МОДАЛКА (как у тебя, пока закомментирована) === */}
-      {/* 
-      {isOpen && (
-        <div
-          className="fixed inset-0 z-50 bg-[#1D2426]/60 flex justify-end items-stretch"
-          onClick={() => setIsOpen(false)}
-        >
-          <div
-            className="relative flex flex-col bg-white w-[820px] max-w-[200vw] h-full shadow-2xl overflow-y-auto transition-transform duration-300"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setIsOpen(false)}
-              className="absolute top-6 right-8 text-black text-3xl font-light z-10"
-            >
-              ✕
-            </button>
-
-            <div className="flex-1 justify-center">
-              <Form2 />
-            </div>
-          </div>
-        </div>
-      )} 
-      */}
     </div>
   );
 }

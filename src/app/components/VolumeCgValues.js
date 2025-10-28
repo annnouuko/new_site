@@ -4,8 +4,8 @@ export default function VolumeCgValues() {
       <div className="flex flex-col md:flex-row h-auto md:h-[1000px] m-4 md:m-6 gap-[2rem] md:gap-0 overflow-hidden">
 
         {/* Левая колонка */}
-        <div className="flex flex-col h-auto md:h-[700px] w-full md:w-[800px] overflow-hidden bg-slate-500">
-          <div className="flex flex-col md:flex-row h-auto md:h-[80px] w-full md:w-[900px] gap-[0.5rem] md:gap-[1rem]">
+        <div className="flex flex-col h-auto md:h-[700px] w-full md:w-[800px] overflow-hidden">
+          <div className="flex flex-row -ml-1 md:flex-row h-auto md:h-[80px] w-full md:w-[900px] gap-[0.5rem] md:gap-[1rem]">
             <div className="text-[#9D9D9D] text-[32px] md:text-[65px] leading-none">VOLUME CG</div>
             <div className="text-black text-[32px] md:text-[65px] leading-none">VALUES</div>
           </div>
@@ -24,7 +24,7 @@ export default function VolumeCgValues() {
         </div>
 
         {/* Правая колонка */}
-        <div className="flex flex-col items-start md:items-end justify-start md:justify-end h-auto md:h-[750px] w-full md:w-[720px] overflow-hidden -mt-[50px] bg-slate-400">
+        <div className="flex flex-col items-start md:items-end justify-start md:justify-end h-auto md:h-[750px] w-full md:w-[720px] overflow-hidden md:-mt-[50px]">
           <div className="flex flex-col h-auto md:h-[380px] w-full md:w-[600px] gap-[2rem] md:gap-[5rem]">
 
             <div className="flex flex-col justify-start items-start md:items-start h-auto md:h-[119px] w-full md:w-[600px]">

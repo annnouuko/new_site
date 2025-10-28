@@ -61,9 +61,9 @@ export default function Works_Grid() {
         </div>
 
         {/* === Вторая строка === */}
-        <div className="flex flex-col md:flex-row gap-[2rem]">
-          <div className="flex flex-col gap-[1rem] w-full md:w-[620px]">
-            <motion.div {...animationProps(3)} className="relative w-full h-[250px] md:h-[500px] rounded-xl">
+        <div className="flex flex-col md:flex-row gap-[2rem] ">
+          <div className="flex flex-col gap-[1rem] w-full md:w-[620px] ">
+            <motion.div {...animationProps(3)} className="relative w-full h-[250px] md:h-[443px] rounded-xl">
               <Link href="/three_project" className="block h-full w-full rounded-xl overflow-hidden">
                 <img
                   src="/img/3.png"
@@ -76,7 +76,7 @@ export default function Works_Grid() {
               </Link>
             </motion.div>
 
-            <motion.div {...animationProps(4)} className="relative w-full h-[250px] md:h-[500px] rounded-xl">
+            <motion.div {...animationProps(4)} className="relative w-full h-[250px] md:h-[443px] rounded-xl">
               <Link href="/four_project" className="block h-full w-full rounded-xl overflow-hidden">
                 <img
                   src="/img/4.png"
