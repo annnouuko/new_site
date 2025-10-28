@@ -1,7 +1,7 @@
 export default function One_11() {
   return (
     <div className="h-auto w-full">
-      <div className="m-6 md:m-6">
+      <div className="m-4 md:m-6">
         <div className="flex flex-col gap-6">
 
           {/* Большой верхний блок */}
