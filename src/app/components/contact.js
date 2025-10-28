@@ -10,7 +10,7 @@ export default function LeftContactBlock() {
           VOLUME CG
         </a>
 
-        <h1 className="mt-12 text-4xl font-bold leading-snug">
+        <h1 className="mt-12 text-2xl  md:text-4xl font-bold leading-snug">
           WE ARE ALWAYS HAPPY
           <br />
           TO DISCUSS YOUR FURIOUS
