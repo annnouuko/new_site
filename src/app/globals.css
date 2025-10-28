@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #E8E8E8;
     --foreground: #ededed;
   }
 }
@@ -22,5 +22,12 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'NT-Bau', sans-serif;
 }
+
+@font-face {
+    font-family: 'NT-Bau';
+    src: url('/fonts/NT-Bau-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
