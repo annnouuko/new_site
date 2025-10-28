@@ -9,7 +9,7 @@ export default function ButtonSvg({ onClick, className }) {
       <img
         src={pressed ? "/svgs/Button2.svg" : "/svgs/Button1.svg"}
         alt="Button"
-        className="w-full h-auto md:w-[300px] md:h-[100px] cursor-pointer transition-all duration-150"
+        className="w-[140px] h-auto md:w-[300px] md:h-auto cursor-pointer transition-all duration-150"
         onMouseDown={() => setPressed(true)}
         onMouseUp={() => {
           setPressed(false);
