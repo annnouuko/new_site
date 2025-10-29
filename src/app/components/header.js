@@ -78,7 +78,7 @@ export default function Header() {
 <div className="flex justify-center md:justify-end items-center w-full md:w-[280px] h-[80px] md:h-[150px]">
   <div className="relative w-[140px] md:w-[200px] h-[80px] md:h-[55px] flex justify-center items-center">
     <img
-      src={pressed ? "/img/button2.svg" : "/img/button11.svg"}
+      src={pressed ? "/img/button2.svg" : "/img/button11.png"}
       alt="Button"
       className="w-full h-auto cursor-pointer transition-all duration-150"
       onMouseDown={() => setPressed(true)}
