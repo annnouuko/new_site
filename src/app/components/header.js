@@ -75,22 +75,21 @@ export default function Header() {
       </div>
 
       {/* === КНОПКА === */}
-      <div className="flex h-[80px] md:h-[150px] justify-end items-center w-[140px] md:w-[280px]">
-        <div className="bg-slate-400 md:flex items-end w-[140px] md:w-[200px] h-[80px] md:h-[55px] relative">
-          <img
-            src={pressed ? "/img/button2.svg" : "/img/button1.svg"}
-            alt="Button"
-            className="h-[100px] md:h-[100px] w-[140px] md:w-[300px] cursor-pointer transition-all duration-150"
-            onMouseDown={() => setPressed(true)}
-            onMouseUp={() => {
-              setPressed(false);
-              setIsOpen(true);
-            }}
-            onMouseLeave={() => setPressed(false)}
-          />
-        </div>
-      </div>
-
+<div className="flex justify-center md:justify-end items-center w-full md:w-[280px] h-[80px] md:h-[150px]">
+  <div className="relative w-[140px] md:w-[200px] h-[80px] md:h-[55px] flex justify-center items-center">
+    <img
+      src={pressed ? "/img/button2.svg" : "/img/button1.png"}
+      alt="Button"
+      className="w-full h-auto cursor-pointer transition-all duration-150"
+      onMouseDown={() => setPressed(true)}
+      onMouseUp={() => {
+        setPressed(false);
+        setIsOpen(true);
+      }}
+      onMouseLeave={() => setPressed(false)}
+    />
+  </div>
+</div>
             
 
       {/* === МОБИЛЬНОЕ МЕНЮ === */}
