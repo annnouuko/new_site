@@ -14,20 +14,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #E8E8E8;
-    --foreground: #ededed;
+    --background: #171717; /* тёмный фон */
+    --foreground: #ededed; /* светлый текст */
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: 'NT-Bau', sans-serif;
 }
 
 @font-face {
-    font-family: 'NT-Bau';
-    src: url('/fonts/NT-Bau-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'NT-Bau';
+  src: url('/fonts/NT-Bau-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

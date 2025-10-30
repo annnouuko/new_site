@@ -10,7 +10,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="w-full h-auto md:h-[220px] bg-slate-300 ">
+    <div className="w-full h-auto md:h-[220px]  ">
       <div className="flex flex-col md:flex-row  h-auto md:h-[220px] m-4 md:m-6 gap-[1rem]">
 
         {/* ЛОГО */}
@@ -46,8 +46,8 @@ export default function Footer() {
 
         {/* КНОПКА "TO THE TOP" */}
         {/* КНОПКА "TO THE TOP" */}
-        <div className="flex justify-center md:justify-end items-center h-auto md:h-[220px] w-full md:w-[270px] mt-4 md:mt-0 md:self-start bg-slate-400">
-          <div className="flex justify-center md:justify-end items-center h-[60px] w-full md:w-[470px] bg-slate-500">
+        <div className="flex justify-center md:justify-end items-center h-auto md:h-[220px] w-full md:w-[270px] mt-4 md:mt-0 md:self-start ">
+          <div className="flex justify-center md:justify-end items-center h-[60px] w-full md:w-[470px] ">
             <img
               src={isPressed ? "/img/button_to_the_top.svg" : "/img/button_to_the_top2.svg"}
               alt="button to the top"
