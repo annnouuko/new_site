@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #E8E8E8;
   --foreground: #171717;
 }
 
@@ -14,20 +14,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #171717;
+    --background: #E8E8E8;
     --foreground: #ededed;
   }
 }
 
 body {
-  background-color: var(--background);
+  background: var(--background);
   color: var(--foreground);
   font-family: 'NT-Bau', sans-serif;
 }
 
 @font-face {
-  font-family: 'NT-Bau';
-  src: url('/fonts/NT-Bau-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+    font-family: 'NT-Bau';
+    src: url('/fonts/NT-Bau-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;   
+  }
