@@ -88,7 +88,7 @@ export default function Form() {
             className="flex items-center gap-3 cursor-pointer select-none transition-colors"
           >
             <img
-              src={selected === "project" ? "/img/agree 2.svg" : "/img/agree.svg"}
+              src={selected === "project" ? "/img/agree.png" : "/img/disagree.png"}
               alt="agree1"
               className="w-8 h-8 md:w-9 md:h-9"
             />
