@@ -41,7 +41,7 @@ export default function Form() {
           <p className="uppercase text-gray-500 text-xs mb-2">Name</p>
           <input
             type="text"
-            className="w-full h-[65px] md:h-[60px] px-5 text-black text-sm rounded-md outline-none border-none bg-transparent"
+            className="w-full h-[65px] md:h-[53px] px-5 text-black text-sm rounded-md outline-none border-none bg-transparent"
             style={{
               backgroundImage: "url('/img/name1.png')",
               backgroundRepeat: "no-repeat",
