@@ -41,11 +41,12 @@ export default function Form() {
           <p className="uppercase text-gray-500 text-xs mb-2">Name</p>
           <input
             type="text"
-            className="w-full h-[65px] md:h-[60px] px-5 text-black text-sm rounded-md outline-none border-none bg-transparent"
+            className="w-full max-w-[800px] h-[60px] px-5 text-black text-sm rounded-md outline-none border-none bg-transparent"
             style={{
-              backgroundImage: "url('/img/name.svg')",
+              backgroundImage: "url('/img/name1.png')",
               backgroundRepeat: "no-repeat",
-              backgroundSize: "100% 100%",
+              backgroundPosition: "center",
+              backgroundSize: "contain", // 👈 или "cover"
             }}
           />
         </div>
@@ -91,9 +92,8 @@ export default function Form() {
               className="w-8 h-8 md:w-9 md:h-9"
             />
             <span
-              className={`font-medium ${
-                selected === "project" ? "text-black" : "text-gray-500"
-              }`}
+              className={`font-medium ${selected === "project" ? "text-black" : "text-gray-500"
+                }`}
             >
               I have a project for you
             </span>
@@ -109,9 +109,8 @@ export default function Form() {
               className="w-8 h-8 md:w-9 md:h-9"
             />
             <span
-              className={`font-medium ${
-                selected === "artist" ? "text-black" : "text-gray-500"
-              }`}
+              className={`font-medium ${selected === "artist" ? "text-black" : "text-gray-500"
+                }`}
             >
               I am an artist and I want to collaborate
             </span>
