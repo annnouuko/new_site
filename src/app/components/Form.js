@@ -56,11 +56,12 @@ export default function Form() {
           <p className="uppercase text-gray-500 text-xs mb-2">Your Email</p>
           <input
             type="email"
-            className="w-full h-[65px] md:h-[60px] px-5 text-black text-sm rounded-md outline-none border-none bg-transparent"
+            className="w-full max-w-[800px] h-[60px] px-5 text-black text-sm rounded-md outline-none border-none bg-transparent"
             style={{
-              backgroundImage: "url('/img/email.svg')",
+              backgroundImage: "url('/img/email.png')",
               backgroundRepeat: "no-repeat",
-              backgroundSize: "100% 100%",
+              backgroundPosition: "center",
+              backgroundSize: "contain",
             }}
           />
         </div>
@@ -73,7 +74,7 @@ export default function Form() {
           <textarea
             className="w-full h-40 md:h-32 px-5 py-4 text-black text-sm rounded-md outline-none border-none resize-none bg-transparent leading-relaxed"
             style={{
-              backgroundImage: "url('/img/your_project.svg')",
+              backgroundImage: "url('/img/form.png')",
               backgroundRepeat: "no-repeat",
               backgroundSize: "100% 100%",
             }}
