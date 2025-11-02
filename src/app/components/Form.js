@@ -43,7 +43,7 @@ export default function Form() {
             type="text"
             className="w-full h-[65px] md:h-[60px] px-5 text-black text-sm rounded-md outline-none border-none bg-transparent"
             style={{
-              backgroundImage: "url('/img/name.svg')",
+              backgroundImage: "url('/img/name1.png')",
               backgroundRepeat: "no-repeat",
               backgroundSize: "100% 100%",
             }}
