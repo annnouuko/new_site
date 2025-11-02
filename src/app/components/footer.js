@@ -46,12 +46,12 @@ export default function Footer() {
 
         {/* КНОПКА "TO THE TOP" */}
         {/* КНОПКА "TO THE TOP" */}
-        <div className="flex justify-center md:justify-end items-center h-auto md:h-[220px] w-full md:w-[270px] mt-4 md:mt-0 md:self-start ">
-          <div className="flex justify-center md:justify-end items-center h-[60px] w-full md:w-[470px] ">
+        <div className="flex justify-center md:justify-end items-center h-auto md:h-[220px] w-full md:w-[270px] mt-4 md:mt-0 md:self-start">
+          <div className="flex justify-center md:justify-end items-center">
             <img
-              src={isPressed ? "/img/button_to_the_top.svg" : "/img/button_to_the_top2.svg"}
+              src="/img/top1.png"
               alt="button to the top"
-              className={`h-[150px] md:h-[340px] w-[200px] md:w-[440px] cursor-pointer transform transition-all ease-[cubic-bezier(0.4,0,0.2,1)] duration-500 ${isPressed ? "scale-[0.97]" : "scale-100"
+              className={`max-w-[160px] md:max-w-[220px] h-auto cursor-pointer transition-transform duration-300 ${isPressed ? "scale-95" : "scale-100"
                 }`}
               onMouseDown={() => setIsPressed(true)}
               onMouseUp={() => {
