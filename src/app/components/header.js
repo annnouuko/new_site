@@ -78,18 +78,29 @@ export default function Header() {
 <div className="flex justify-center md:justify-end items-center w-full md:w-[280px] h-[80px] md:h-[150px]">
   <div className="relative w-[140px] md:w-[200px] h-[80px] md:h-[55px] flex justify-center items-center">
     <img
-      src={pressed ? " /img/button1_mobile.png " : "/img/Rectangle 1622.png"}
+      src={pressed ? "/img/button1_mobile.png" : "/img/Rectangle 1622.png"}
       alt="Button"
-      className="w-full h-auto cursor-pointer transition-all duration-150"
+      className={`w-full h-auto cursor-pointer transition-all duration-150 
+        ${pressed ? "scale-95 brightness-90" : "scale-100 brightness-100"}`}
+      
+      // --- мышь ---
       onMouseDown={() => setPressed(true)}
       onMouseUp={() => {
         setPressed(false);
         setIsOpen(true);
       }}
       onMouseLeave={() => setPressed(false)}
+
+      // --- мобильные тач-события ---
+      onTouchStart={() => setPressed(true)}
+      onTouchEnd={() => {
+        setPressed(false);
+        setIsOpen(true);
+      }}
     />
   </div>
 </div>
+
             
 
       {/* === МОБИЛЬНОЕ МЕНЮ === */}
