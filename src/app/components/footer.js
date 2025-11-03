@@ -49,9 +49,9 @@ export default function Footer() {
         <div className="flex justify-center md:justify-end items-center h-auto md:h-[220px] w-full md:w-[270px] mt-4 md:mt-0 md:self-start">
           <div className="flex justify-center md:justify-end items-center">
             <img
-              src="/img/top1.png"
+              src={isPressed ? "/img/top2.png" : "/img/top1.png"} // 👈 меняем картинку при нажатии
               alt="button to the top"
-              className={`max-w-[160px] md:max-w-[220px] h-auto cursor-pointer transition-transform duration-300 ${isPressed ? "scale-95" : "scale-100"
+              className={`max-w-[160px] md:max-w-[220px] h-auto cursor-pointer transition-all duration-200 ease-in-out ${isPressed ? "scale-95" : "scale-100"
                 }`}
               onMouseDown={() => setIsPressed(true)}
               onMouseUp={() => {
@@ -59,6 +59,11 @@ export default function Footer() {
                 scrollToTop();
               }}
               onMouseLeave={() => setIsPressed(false)}
+              onTouchStart={() => setIsPressed(true)} // 👈 для мобильных
+              onTouchEnd={() => {
+                setIsPressed(false);
+                scrollToTop();
+              }}
             />
           </div>
         </div>

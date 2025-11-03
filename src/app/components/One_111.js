@@ -12,7 +12,7 @@ export default function One_111() {
 
           {/* Кнопка */}
           <div className="flex justify-center items-end h-[150px] md:h-[200px]">
-            <div className="flex justify-center items-center h-[60px] w-[200px] md:w-[270px] bg-slate-700">
+            <div className="flex justify-center items-center h-[60px] w-[200px] md:w-[270px] ">
               <img
                 src="/img/see_other_projects.svg"
                 alt="button"

@@ -18,14 +18,16 @@ export default function Button_mobile() {
   return (
     <div className="flex md:hidden justify-center items-center py-4">
       <img
-        src="/img/project_list_3.png"
+        src={isPressed ? "/img/project_list_4.png" : "/img/project_list_3.png"} // 👈 смена картинки
         alt="project list button"
-        className={`max-w-[180px] h-auto cursor-pointer transition-transform duration-150 ${
+        className={`max-w-[180px] h-auto cursor-pointer transition-all duration-200 ease-in-out ${
           isPressed ? "scale-95" : "scale-100"
         }`}
         onMouseDown={() => setIsPressed(true)}
         onMouseUp={handleClick}
         onMouseLeave={() => setIsPressed(false)}
+        onTouchStart={() => setIsPressed(true)} // 👈 для мобильных
+        onTouchEnd={handleClick}
       />
     </div>
   );
